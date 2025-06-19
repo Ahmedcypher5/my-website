@@ -1,0 +1,208 @@
+/* Reset default margin */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  color: #007BFF;
+  text-align: center;
+}
+
+/* Paragraphs */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+/* Links (styled as buttons) */
+a {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Image */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+/* Button */
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Custom message */
+#message {
+  color: #333;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+/* Form Styles */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* Flexbox Example */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.box {
+  background-color: #007BFF;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.intro-text {
+  max-width: 60%;
+}
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+}
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
