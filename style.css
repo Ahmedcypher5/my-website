@@ -206,3 +206,34 @@ button[type="submit"]:hover {
 .project-card:hover {
   transform: translateY(-5px);
 }
+/* Make the layout responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 12px;
+    border-bottom: 1px solid #555;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
